@@ -13,6 +13,7 @@ export default {
   async mounted() {
     const { text } = await (await fetch("/api/message")).json();
     this.message = text;
+    await (await fetch("/api/sendmail"));
   }
 };
 </script>
