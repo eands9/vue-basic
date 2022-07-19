@@ -32,7 +32,7 @@ module.exports = async function(context, req) {
         from: "kffsande@outlook.com",
         to: "kffsande@outlook.com",
         // subject: req.body.name + "'s order is shown below...",
-        subject: "Test Subject 3",
+        subject: "Test Subject 4",
         text: "Wow! That's Easy"
     }
 
