@@ -37,9 +37,9 @@ export default {
       this.email = "";
       this.message = "";
     },
-    async sendmail(){
+    sendmail(){
       console.log("Button Pushed...")
-      await fetch("https://gray-meadow-0bc9dc80f.1.azurestaticapps.net/api/sendmail");
+      fetch(API + "/api/sendmail", {headers: HEADERS, method: "POST"});
     }
   },
 }
