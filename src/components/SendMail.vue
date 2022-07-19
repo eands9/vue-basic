@@ -39,7 +39,9 @@ export default {
     },
     sendmail(){
       console.log("Button Pushed...")
-      fetch(API + "/api/sendmail", {headers: HEADERS, method: "POST"});
+      await fetch("/api/sendmail");
+      // fetch(API + "/api/sendmail", {headers: HEADERS, method: "POST"});
+
     }
   },
 }
