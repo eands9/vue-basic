@@ -39,7 +39,7 @@ export default {
     },
     async sendmail(){
       console.log("Button Pushed...")
-      await fetch("http://localhost:7071/api/sendmail");
+      await fetch("https://gray-meadow-0bc9dc80f.1.azurestaticapps.net/api/sendmail");
     }
   },
 }
