@@ -37,7 +37,7 @@ export default {
       this.email = "";
       this.message = "";
     },
-    sendmail(){
+    async sendmail(){
       console.log("Button Pushed...")
       await fetch("/api/sendmail");
       // fetch(API + "/api/sendmail", {headers: HEADERS, method: "POST"});
