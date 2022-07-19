@@ -39,7 +39,7 @@ export default {
     },
     async sendmail(){
       console.log("Button Pushed...")
-      await fetch("/api/sendmail");
+      await fetch("http://localhost:7071/api/sendmail");
     }
   },
 }

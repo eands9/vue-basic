@@ -1,7 +1,7 @@
 // require("dotenv").config();
 const nodemailer = require("nodemailer");
 
-module.exports = async function() {
+module.exports = async function(context, req) {
   let transporter = nodemailer.createTransport({
     service: "hotmail",
     // host: "smtp.gmail.com",
@@ -32,7 +32,7 @@ module.exports = async function() {
         from: "kffsande@outlook.com",
         to: "kffsande@outlook.com",
         // subject: req.body.name + "'s order is shown below...",
-        subject: "Test Subject 2",
+        subject: "Test Subject 3",
         text: "Wow! That's Easy"
     }
 
@@ -44,4 +44,7 @@ module.exports = async function() {
             console.log("Sent: " + info.response); 
         }
     }) 
+    context.res.json({
+        text: "Hello from the API"
+    });
 };
